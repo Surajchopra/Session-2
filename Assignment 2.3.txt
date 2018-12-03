@@ -1,0 +1,38 @@
+1. How to Import SAS XPORT Files into R With The foreign package?
+
+Answer: 
+
+library(foreign)
+read.xport(foreign)
+read.xport(filename)	
+	
+2. How to Import SAS Files into R With The haven Package?
+
+Answer: 
+
+Install.package(“haven”)
+library(haven)
+sas.file <-  read_sas(file.choose()) 
+
+3. How to read Weka Attribute-Relation File Format (ARFF) files in R?
+
+Answer:  
+
+Library(foreign)
+read.arff (file)
+
+4. How to read a heavy csv/tsv file using readr package?
+
+Answer:  
+1. to read the csv files using readr package. 
+
+install.package(“readr”)   			#  to install the readr package in R.
+library(readr)    				# to load the readr package.
+setwd(directory location)  			# set the working directory or file path where you save your file. 
+csvfile <- read_csv(filesname.csv) 
+csvfile 					# output.	
+
+tsv file using readr package. 
+
+library(readr)
+Tsvfile <- read_tsv( filename.tsv)
